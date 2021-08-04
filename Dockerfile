@@ -19,7 +19,7 @@ RUN apt update && \
     wget --no-check-certificate https://www.rforge.net/Rserve/snapshot/Rserve_1.8-6.tar.gz && \
     R CMD INSTALL Rserve_1.8-6.tar.gz && \
     rm Rserve_1.8-6.tar.gz && \
-    Rscript -e 'install.packages(c( "ggplot2", "dplyr", "magrittr", "lubridate", "stringr", "tidyr", "zoo", "httr", "jsonlite", "mime", "openssl", "curl", "covr", "httpuv", "jpeg", "knitr", "png", "readr", "rmarkdown", "xml2"), repo="http://cran.rstudio.com")'
+    Rscript -e 'install.packages(c( "dplyr", "magrittr", "lubridate", "stringr", "tidyr",  "httr", "jsonlite", "mime", "openssl", "curl", "covr", "httpuv", "jpeg", "png", "readr", "xml2"), repo="http://cran.rstudio.com")'
 
 VOLUME /localdata
 

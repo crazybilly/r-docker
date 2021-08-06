@@ -22,6 +22,9 @@ RUN apt update && \
 VOLUME /localdata
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
+COPY Rserve.cfg /etc/Rserve.cfg
+COPY rserve-startup.R /rserve-startup.R
+
 EXPOSE 6311
 RUN chmod -x docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]

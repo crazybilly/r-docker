@@ -25,3 +25,11 @@ external_f  <- function(post_location, ..., host = 'localhost', port = '8000', c
     content_function(content(result))
 
 }
+
+
+test_rserve  <- function(x = 'foo') {
+    
+    return('Rserve is configured!')
+
+}
+
